@@ -24,6 +24,9 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
+    byebug
+    comment_params[:photo_id] = comment_params[:photo_id].to_i
+    byebug
     @comment = Comment.new(comment_params)
 
     respond_to do |format|
