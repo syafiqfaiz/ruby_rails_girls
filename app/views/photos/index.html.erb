@@ -4,7 +4,7 @@
   <div class="row">
     <% group.compact.each do |photo| %>
       <div class="col-xs-4">
-        <%= image_tag photo.file_url, :width => '100%' if photo.file.present?%>
+        <%= image_tag photo.file_url(:thumb) if photo.file.present?%>
         <h4><%= link_to photo.title, photo %></h4>
         <%= photo.description %>
       </div>

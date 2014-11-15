@@ -13,6 +13,8 @@ group :production do
 end
 #User carrierwave to upload file
 gem 'carrierwave'
+#image resize
+gem 'mini_magick', '3.8.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
